@@ -4,25 +4,36 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		int[] numbers = new int [] { 1 , 2 , 3 , 4 , 5 };
+		findNumber();
+		findNumber();
+		findNumber();
+		findNumber();
 		
-		int search  = 1;
-		
-		boolean isExist =false ;
-		
-		for (int number : numbers ) {
-			if (number == search)
-			{
-				isExist=true;
+	}
+
+	public static void findNumber() {
+		int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+
+		int search = 1;
+
+		boolean isExist = false;
+
+		for (int number : numbers) {
+			if (number == search) {
+				isExist = true;
 				break;
 			}
-		}//for
+		} // for
 
-		if(isExist) 
-			System.out.println("number is exist");
+		if (isExist)
+			sendMessage("Number is exist:" +search);
 		else
-			System.out.println("number is not exist");
-			
+			sendMessage("Number is not exist:" +search);
+		}
+	
+	public static void sendMessage(String message){
+		
+		System.out.println(message);
 		
 	}
 
