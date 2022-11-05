@@ -10,8 +10,8 @@ public class Main {
 		
 		System.out.println(myOperator.Addition(num1, num2));
 		System.out.println(myOperator.Subtraction(num2, num1));
-		System.out.println(myOperator.Addition(num1, num2));
-		System.out.println(myOperator.Subtraction(num2, num1));
+		System.out.println(myOperator.Multiplication(num1, num2));
+		System.out.println((int)myOperator.Division(num2, num1)*100.0 / 100);
 
 	}
 
